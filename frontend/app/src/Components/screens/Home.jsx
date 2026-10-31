@@ -20,7 +20,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      let url = `/api/getApplicantData/?page=${currentPage}`;
+      let url = `https://electricity-project-rjba.onrender.com/api/getApplicantData/?page=${currentPage}`;
       if(startDate && endDate){
         // console.log(startDate)
         // console.log(startDate.toISOString().split("T")[0])

@@ -53,10 +53,6 @@ function Header() {
                   </LinkContainer>
                 </li>
               )}
-
-
-
-
             </ul>
           </div>
         </div>
