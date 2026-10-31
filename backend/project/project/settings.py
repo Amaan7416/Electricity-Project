@@ -23,9 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1nwuee0zz=(!g(ul+(8&!!ot6d&!r-v5yj@@98uu#u=11)=#7)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 APPENDS_SLASH=False
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "electricity-project-rjba.onrender.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://electricity-project-rjba.onrender.com",
+]
 
 
 # Application definition
