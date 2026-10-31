@@ -31,24 +31,25 @@ ALLOWED_HOSTS = [
     "electricity-project-rjba.onrender.com",
 ]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://electricity-project-rjba.onrender.com",
+CORS_ALLOWED_ORIGINS = [
+    "https://electricity-project-1-22lp.onrender.com",
 ]
-
 
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
+    'app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
